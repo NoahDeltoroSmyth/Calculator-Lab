@@ -8,10 +8,15 @@ const test = QUnit.test;
 test('add function', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = 5;
+    const number1 = 4;
+    const number2 = 6;
+
+    const expected = 10;
     //Act 
+    const result = add (number1, number2)
+    
     // Call the function you're testing and set the result to a const
-    const actual = add(x, y); // use your function here
+    const actual = result; // use your function here
 
     //Expect
     // Make assertions about what is expected versus the actual result
