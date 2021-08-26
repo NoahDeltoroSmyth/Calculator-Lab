@@ -1,33 +1,33 @@
 
 body {        
     font-family: 'Titillium Web', sans-serif;
-    background-color: #FFFCFA;
+    background-color: lightcyan;
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
 
 main {
-    display:grid;
-    grid-auto-rows: min-content;
-    grid-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-.add {
-    display:grid;
-    grid-template-columns: 150px auto 150px 35px 2fr;
-    grid-auto-columns: min-content;
-    grid-gap: 10px;
+.calcdiv {
+    width: 600px;
+    max-width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+    padding: 5px;
+    border: dotted 2px maroon;
+    border-radius: 20px;
 }
 
-.subtract {
-    display:grid;
-    grid-template-columns: 150px auto 150px 35px 2fr;
-    grid-auto-columns: min-content;
-    grid-gap: 10px;
-}
 
 header {
-    background-color: #A2D7D2;
+    background-color: rgb(197, 92, 22);
     height: 110px;
     padding: 0 30px;
     display: flex;
@@ -41,8 +41,10 @@ header img {
 }
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 2.1rem;
     font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
 }
 
 footer {
