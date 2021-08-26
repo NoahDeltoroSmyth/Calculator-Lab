@@ -3,7 +3,9 @@ import { add } from './calculator.js';
 
 import { subtract } from './calculator.js';
 
-import { multiply } from './calculator.js'
+import { multiply } from './calculator.js';
+
+import { divide } from './calculator.js';
 
 // reference needed DOM elements
 const addNumber1 = document.getElementById('add-number-1');
@@ -21,8 +23,10 @@ const multiplyNumber2 = document.getElementById('multiply-number-2');
 const multiplyButton = document.getElementById('multiply-button');
 const multiplyAnswer = document.getElementById('multiply-answer');
 
-
-
+const divideNumber1 = document.getElementById('divide-number-1');
+const divideNumber2 = document.getElementById('divide-number-2');
+const divideButton = document.getElementById('divide-button');
+const divideAnswer = document.getElementById('divide-answer');
 
 // set event listeners 
 
@@ -46,6 +50,13 @@ multiplyButton.addEventListener('click', () => {
     const multnum2 = Number(multiplyNumber2.value);
     const multsum = multiply(multnum1, multnum2);
     multiplyAnswer.textContent = multsum;
+});
+
+divideButton.addEventListener('click', () => {
+    const divnum1 = Number(divideNumber1.value);
+    const divnum2 = Number(divideNumber2.value);
+    const divsum = divide(divnum1, divnum2);
+    divideAnswer.textContent = divsum;
 });
 
 
