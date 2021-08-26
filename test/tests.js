@@ -1,20 +1,14 @@
 // IMPORT MODULES under test here:
+import { add } from '../calculator.js';
 // import { add } from '../calculator.js';
 
 const test = QUnit.test;
 
-fucntion add() {
-    
-};
-
 // name your test by what it is testing
-test('add two numbers', (expect) => {
+test('add function', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const x = 1;
-    const y = 3;
-    const expected = 4;
-    
+    const expected = 5;
     //Act 
     // Call the function you're testing and set the result to a const
     const actual = add(x, y); // use your function here
